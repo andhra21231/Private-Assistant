@@ -13,9 +13,9 @@ ECHO
 ECHO.
 CHOICE /C YNR /M "Kami Akan Download Dependencies Apakah Ingin Melanjutkan? (R) Hanya Untuk Memulai application. Download Dependencies Dahulu!"
 IF ERRORLEVEL 2 exit
-IF ERRORLEVEL 1 GOTO autorenew
+IF ERRORLEVEL 1 GOTO Dependencies
 
-:autorenew
+:Dependencies
 ECHO Downloading Python3.8
 msiexec /i python<version>.msi
 ECHO Done
